@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    background-color: #666;
+    color: rgb(122, 118, 118);
+}
+.header {
+    background-color: #fff;
+}
+.header__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+.logo {
+}
+.menu {
+    display: flex;
+    /* align-items: center; */
+}
+.menu__item {
+    margin: 0 1rem;
+
+    /* position: relative; */
+}
+.menu__link {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    padding: 1.5rem 0;
+}
+
+.menu__item:hover .menu__child {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s linear;
+}
+
+/* phu thuoc vao header__inner  */
+.menu__child {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu__child-item {
+    width: 25%;
+}
+.menu__child-item h4 {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: #00aefd;
+}
+
+.menu__child-list li {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border-top: 1px solid #eee;
+}
+
+.page {
+    width: 50%;
+    left: 50%;
+}
